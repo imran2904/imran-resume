@@ -17,7 +17,7 @@ export default function Resume() {
       <div className="bg-white p-6 w-full max-w-3xl">
         {/* Header */}
         <div className="text-center border-b border-gray-300 pb-2">
-          <h1 className="text-2xl font-bold text-blue-800">IMRAN KHAN</h1>
+          <h1 className="text-2xl font-bold text-purple-500">IMRAN KHAN</h1>
           <p className="text-xs text-gray-600">
             Frontend Developer | Master Of Computer Application
           </p>
@@ -62,7 +62,7 @@ export default function Resume() {
 
         {/* Objective */}
         <div className="mt-3">
-          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-blue-800">
+          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-purple-500">
             Objective
           </h2>
           <p className="text-xs mt-2">
@@ -72,7 +72,7 @@ export default function Resume() {
 
         {/* Skills */}
         <div className="mt-3">
-          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-blue-800">
+          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-purple-500">
             Skills
           </h2>
           <div className="flex mt-2">
@@ -100,7 +100,7 @@ export default function Resume() {
 
         {/* Work Experience */}
         <div className="mt-3">
-          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-blue-800">
+          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-purple-500">
             Work Experience
           </h2>
           <div className="mt-2">
@@ -136,7 +136,7 @@ export default function Resume() {
 
         {/* Education */}
         <div className="mt-3">
-          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-blue-800">
+          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-purple-500">
             Education
           </h2>
           <div className="mt-2">
@@ -165,7 +165,7 @@ export default function Resume() {
 
         {/* Projects */}
         <div className="mt-3">
-          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-blue-800">
+          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-purple-500">
             Projects
           </h2>
           <div className="mt-2">
