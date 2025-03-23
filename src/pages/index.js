@@ -17,7 +17,7 @@ export default function Resume() {
       <div className="bg-white p-6 w-full max-w-3xl">
         {/* Header */}
         <div className="text-center border-b border-gray-300 pb-2">
-          <h1 className="text-2xl font-bold text-fuchsia-600">IMRAN KHAN</h1>
+          <h1 className="text-2xl font-bold text-blue-800">IMRAN KHAN</h1>
           <p className="text-xs text-gray-600">
             Frontend Developer | Master Of Computer Application
           </p>
@@ -33,8 +33,9 @@ export default function Resume() {
             </p>
             <span>|</span>
             <p>
-              <Link href="https://www.linkedin.com/in/imran-khan-2a0711270" passHref
-
+              <Link
+                href="https://www.linkedin.com/in/imran-khan-2a0711270"
+                passHref
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 hover:text-blue-500"
@@ -45,8 +46,9 @@ export default function Resume() {
             </p>
             <span>|</span>
             <p>
-              <Link href="https://github.com/imran2904" passHref
-
+              <Link
+                href="https://github.com/imran2904"
+                passHref
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 hover:text-blue-500"
@@ -60,7 +62,7 @@ export default function Resume() {
 
         {/* Objective */}
         <div className="mt-3">
-          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-fuchsia-600">
+          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-blue-800">
             Objective
           </h2>
           <p className="text-xs mt-2">
@@ -68,9 +70,37 @@ export default function Resume() {
           </p>
         </div>
 
+        {/* Skills */}
+        <div className="mt-3">
+          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-blue-800">
+            Skills
+          </h2>
+          <div className="flex mt-2">
+            {/* Left Side: Languages, Technical Skills, Tools */}
+            <div className="w-1/2">
+              <p className="text-xs font-bold">Languages</p>
+              <p className="text-xs">JavaScript, TypeScript, Python, Java</p>
+              <p className="text-xs font-bold mt-1">Technical Skills</p>
+              <p className="text-xs">Next.js, React.js, Node.js, Tailwind CSS, Bootstrap, MongoDB, Vercel, Node.js (Basic)</p>
+              <p className="text-xs font-bold mt-1">Tools</p>
+              <p className="text-xs">Jira, Postman, Git, GitHub, Microsoft Office</p>
+            </div>
+            {/* Right Side: Soft Skills */}
+            <div className="w-1/2 pl-4">
+              <p className="text-xs font-bold">Soft Skills</p>
+              <ul className="list-disc list-inside text-xs space-y-0.5">
+                <li>Time Management</li>
+                <li>Problem Solving</li>
+                <li>Team Collaboration</li>
+                <li>Adaptability</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         {/* Work Experience */}
         <div className="mt-3">
-          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-fuchsia-600">
+          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-blue-800">
             Work Experience
           </h2>
           <div className="mt-2">
@@ -106,11 +136,11 @@ export default function Resume() {
 
         {/* Education */}
         <div className="mt-3">
-          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-fuchsia-600">
+          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-blue-800">
             Education
           </h2>
           <div className="mt-2">
-            <div className='text-sm'>
+            <div className="text-sm">
               Bikaner Technical University
             </div>
             <div className="text-[13px] text-gray-700 font-normal">
@@ -121,7 +151,7 @@ export default function Resume() {
             </div>
           </div>
           <div className="mt-2">
-            <div className='text-sm'>
+            <div className="text-sm">
               Jai Narain Vyas University (JNVU)
             </div>
             <div className="text-[13px] text-gray-700 font-medium">
@@ -135,17 +165,19 @@ export default function Resume() {
 
         {/* Projects */}
         <div className="mt-3">
-          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-fuchsia-600">
+          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-blue-800">
             Projects
           </h2>
           <div className="mt-2">
             <h3 className="text-sm font-medium">
-              StockeZee{' '}
-              <Link href="https://stockezee.com" passHref
+              <Link
+                href="https://stockezee.com"
+                passHref
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-500"
               >
+                <span className="text-black">StockeZee{' '}</span>
                 <FontAwesomeIcon icon={faLink} className="text-[10px]" />
               </Link>
               <span className="text-xs font-medium text-gray-600 float-right">
@@ -163,13 +195,16 @@ export default function Resume() {
           </div>
           <div className="mt-3">
             <h3 className="text-sm font-medium">
-              NiftyTrader{' '}
-              <Link href="https://www.niftytrader.in" passHref
-
+              <Link
+                href="https://www.niftytrader.in"
+                passHref
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-500"
               >
+                <span className="text-black">
+                  NiftyTrader{' '}
+                </span>
                 <FontAwesomeIcon icon={faLink} className="text-[10px]" />
               </Link>
               <span className="text-xs text-gray-600 float-right">
@@ -187,14 +222,16 @@ export default function Resume() {
           </div>
           <div className="mt-3">
             <h3 className="text-sm font-medium">
-              Logistic Solution{' '}
-              <Link href="https://logistic-solution.vercel.app/"
+              <Link
+                href="https://logistic-solution.vercel.app/"
                 passHref
                 className="text-blue-500"
                 rel="noopener noreferrer"
                 target="_blank"
-
               >
+                <span className="text-black">
+                  Logistic Solution{' '}
+                </span>
                 <FontAwesomeIcon icon={faLink} className="text-[10px]" />
               </Link>
             </h3>
@@ -208,35 +245,7 @@ export default function Resume() {
             </ul>
           </div>
         </div>
-
-        {/* Skills (Moved to Bottom) */}
-        <div className="mt-3">
-          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-fuchsia-600">
-            Skills
-          </h2>
-          <div className="flex mt-2">
-            {/* Left Side: Languages, Technical Skills, Tools */}
-            <div className="w-1/2">
-              <p className="text-xs font-bold">Languages</p>
-              <p className="text-xs">JavaScript, TypeScript, Python, Java</p>
-              <p className="text-xs font-bold mt-1">Technical Skills</p>
-              <p className="text-xs">Next.js, React.js, Node.js, Tailwind CSS, Bootstrap, MongoDB, Vercel, Node.js (Basic)</p>
-              <p className="text-xs font-bold mt-1">Tools</p>
-              <p className="text-xs">Jira, Postman, Git, GitHub , Microsoft Office</p>
-            </div>
-            {/* Right Side: Soft Skills */}
-            <div className="w-1/2 pl-4">
-              <p className="text-xs font-bold">Soft Skills</p>
-              <ul className="list-disc list-inside text-xs space-y-0.5">
-                <li>Time Management</li>
-                <li>Problem Solving</li>
-                <li>Team Collaboration</li>
-                <li>Adaptability</li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
-    </div >
+    </div>
   );
 }
