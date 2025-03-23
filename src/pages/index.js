@@ -105,7 +105,7 @@ export default function Resume() {
           </h2>
           <div className="mt-2">
             <h3 className="text-sm font-medium">
-              Now a Wave Technologies
+              Now~A~Wave Technologies Pvt Ltd
               <span className="text-xs text-gray-600 float-right">
                 August 2024 - Present
               </span>
@@ -144,7 +144,7 @@ export default function Resume() {
               Bikaner Technical University
             </div>
             <div className="text-[13px] text-gray-700 font-normal">
-              Master of Computer Applications (MCA) - 8.2/10
+              Master of Computer Applications (MCA) - 8.2/10 CGPA
               <span className="text-xs text-gray-600 float-right">
                 2022 - 2024
               </span>
