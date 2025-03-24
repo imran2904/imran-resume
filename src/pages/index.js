@@ -17,7 +17,7 @@ export default function Resume() {
       <div className="bg-white p-6 w-full max-w-3xl">
         {/* Header */}
         <div className="text-center border-b border-gray-300 pb-2">
-          <h1 className="text-2xl font-bold text-purple-500">IMRAN KHAN</h1>
+          <h1 className="text-2xl font-bold text-fuchsia-600">IMRAN KHAN</h1>
           <p className="text-xs text-gray-600">
             Frontend Developer | Master Of Computer Application
           </p>
@@ -66,7 +66,7 @@ export default function Resume() {
             Objective
           </h2>
           <p className="text-xs mt-2">
-            Frontend Developer with 1 year of experience in scalable web applications using React.js, Next.js, StoryBook, Bootstrap and Tailwind CSS, specializing in performance, mentoring, and user-focused solutions.
+            Frontend Developer with 1 year of experience in scalable web applications using React.js, Next.js, and Tailwind CSS, seeking a role where I can contribute to organizational growth while enhancing my personal and professional skills. I aim to leverage my expertise in performance optimization and user-focused solutions to learn new technologies and deliver impactful results.
           </p>
         </div>
 
@@ -144,7 +144,7 @@ export default function Resume() {
               Bikaner Technical University
             </div>
             <div className="text-[13px] text-gray-700 font-normal">
-              Master of Computer Applications (MCA) - 8.2/10 CGPA
+              Master of Computer Applications (MCA) - 8.2/10
               <span className="text-xs text-gray-600 float-right">
                 2022 - 2024
               </span>
