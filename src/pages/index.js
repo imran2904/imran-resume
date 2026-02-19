@@ -6,12 +6,12 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Resume() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
       <Head>
         <title>Imran Khan - Resume</title>
       </Head>
 
-      <div className="bg-white p-6 w-full max-w-3xl">
+      <div className="bg-white p-6 !pt-4 w-full max-w-[810px]">
         {/* Header */}
         <div className="text-center border-b border-gray-300 pb-2">
           <h1 className="text-2xl font-bold text-fuchsia-600">IMRAN KHAN</h1>
@@ -89,13 +89,13 @@ export default function Resume() {
               <p className="text-xs">JavaScript, TypeScript, Python, Java</p>
 
               <p className="text-xs font-bold mt-2">Frontend</p>
-              <p className="text-xs">
-                React.js, Next.js, Tailwind CSS, Bootstrap, SCSS, Responsive UI, SEO
-                Basics
+              <p className="text-xs max-w-[270px]">
+                React.js, Next.js, Tailwind CSS, Bootstrap, SCSS,
+                Responsive UI, Highchart , Rechart SEO Basics
               </p>
 
               <p className="text-xs font-bold mt-2">Backend (Basic)</p>
-              <p className="text-xs">Node.js, MongoDB, REST APIs</p>
+              <p className="text-xs">Node.js, MongoDB, SQL, REST APIs</p>
             </div>
 
             {/* Right Side */}
@@ -142,20 +142,14 @@ export default function Resume() {
               </li>
 
               <li>
-                Collaborated with a team of 5 to implement RESTful APIs, ensuring seamless data flow between frontend and backend.
+                Collaborated with team to implement RESTful APIs, ensuring seamless data flow between frontend and backend.
               </li>
 
               <li>
                 Optimized frontend performance by improving component rendering, reducing
                 unnecessary re-renders, and enhancing overall page speed.
               </li>
-
-              <li>
-                Participated in code reviews and followed Agile methodologies to improve
-                code quality and development efficiency.
-              </li>
-
-              <li>
+              <li >
                 Single-handedly developed StockeZee, a stock analysis web application from
                 scratch, enabling users to track stock prices and manage portfolios
                 efficiently.
@@ -198,7 +192,7 @@ export default function Resume() {
           </div>
         </div>
 
-        {/* Projects */}
+
         {/* Projects */}
         <div className="mt-3">
           <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-purple-500">
@@ -214,10 +208,10 @@ export default function Resume() {
                 rel="noopener noreferrer"
                 className="text-blue-500"
               >
-                <span className="text-black">
+                <span className="text-black font-[500]">
                   StockeZee{" "}
                   <span className="text-[11px] text-gray-500 font-normal">
-                    (Next.js, React.js, Tailwind CSS, REST APIs, AWS)
+                    (Next.js, React.js, Tailwind CSS, REST APIs, AWS, Highcharts)
                   </span>{" "}
                 </span>
                 <FontAwesomeIcon icon={faLink} className="w-3 h-3 ml-1" />
@@ -229,14 +223,20 @@ export default function Resume() {
             </h3>
 
             <ul className="list-disc list-inside text-xs mt-1 space-y-0.5 leading-relaxed">
-              <li>
-                Single-handedly developed StockeZee, a stock management web application
+              <li className="max-w-[680px]">
+                Single-handedly developed StockeZee, a stock analysis web application
                 from scratch, enabling users to track stock prices and manage portfolios
                 efficiently.
               </li>
+
               <li>
                 Designed a responsive UI using Next.js and Tailwind CSS, integrating
-                real-time stock APIs for 1,000+ users, deployed on AWS.
+                real-time stock APIs for <b>1,000+ users</b>,
+              </li>
+
+              <li>
+                Implemented interactive stock data visualization using <b>Highcharts</b> and <b>Recharts</b> for
+                price trends, volume, and key metrics.
               </li>
             </ul>
           </div>
@@ -250,16 +250,18 @@ export default function Resume() {
                 rel="noopener noreferrer"
                 className="text-blue-500"
               >
-                <span className="text-black">
+                <span className="text-black font-[500]">
                   NiftyTrader{" "}
                   <span className="text-[11px] text-gray-500 font-normal">
-                    (Next.js, React.js, Tailwind CSS, REST APIs, Charts)
+                    (Next.js, React.js, Tailwind CSS, REST APIs, Recharts)
                   </span>{" "}
                 </span>
                 <FontAwesomeIcon icon={faLink} className="w-3 h-3 ml-1" />
               </Link>
 
-              <span className="text-xs text-gray-600 float-right">2024 - Present</span>
+              <span className="text-xs text-gray-600 float-right">
+                2024 - Present
+              </span>
             </h3>
 
             <ul className="list-disc list-inside text-xs mt-1 space-y-0.5 leading-relaxed">
@@ -268,44 +270,10 @@ export default function Resume() {
                 trading, by developing multiple modules including Option Chain, user
                 dashboards, and data visualization tools.
               </li>
-              <li>
-                Enhanced user experience with real-time market data integration.
-              </li>
-            </ul>
-          </div>
 
-          {/* Logistic Solution */}
-          <div className="mt-3">
-            <h3 className="text-sm font-medium">
-              <Link
-                href="https://logistic-solution.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500"
-              >
-                <span className="text-black">
-                  Logistic Solution{" "}
-                  <span className="text-[11px] text-gray-500 font-normal">
-                    (Next.js, Bootstrap, Vercel)
-                  </span>{" "}
-                </span>
-                <FontAwesomeIcon icon={faLink} className="w-3 h-3 ml-1" />
-              </Link>
-
-              <span className="text-xs text-gray-600 float-right">
-                Jan 2024 - Jun 2024
-              </span>
-            </h3>
-
-            <ul className="list-disc list-inside text-xs mt-1 space-y-0.5 leading-relaxed">
               <li>
-                Developed Logistic Solution as a college project in the final semester
-                of MCA (Jan 2024 - Jun 2024) to streamline logistics and supply chain
-                management.
-              </li>
-              <li>
-                Built a responsive UI using Next.js and Bootstrap, deployed on Vercel for
-                scalability.
+                Developed interactive charts and visualizations using <b>Recharts</b>{" "}
+                and improved UX for data-heavy pages.
               </li>
             </ul>
           </div>
@@ -315,3 +283,6 @@ export default function Resume() {
     </div>
   );
 }
+
+
+
