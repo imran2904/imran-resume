@@ -81,10 +81,10 @@ export default function Resume() {
           <p className="text-xs mt-2 leading-relaxed">
             Frontend Developer with <b>2 years of experience</b> building scalable web
             applications using <b>React.js</b> and <b>Next.js</b>. Experienced in
-            <b>Redux Toolkit</b> and <b>Context API</b> for state management, performance
+            <b className="ms-1">Redux Toolkit</b> and <b>Context API</b> for state management, performance
             optimization, and REST API integration. Hands-on experience developing fintech dashboards,
             real-time stock analytics platforms, and data visualization systems serving
-            <b>1,000+ users</b>.
+             <b className="ms-1">1,000+ users</b>.
           </p>
         </div>
 
@@ -139,13 +139,12 @@ export default function Resume() {
 
           <div className="mt-2">
             <h3 className="text-sm font-medium">
-              Now A Wave Technologies Pvt Ltd
+              Now A Wave Technologies Pvt Ltd | Jodhpur, Rajasthan
               <span className="text-xs text-gray-600 float-right">
-                August 2024 - Present
+             Frontend Developer | August 2024 – Present
               </span>
             </h3>
 
-            <p className="text-xs text-gray-700 italic">Frontend Developer</p>
 
             {/* 🔥 Tumhara original content SAME rakha */}
             <ul className="list-disc list-inside text-xs mt-1 space-y-0.5 leading-relaxed">
