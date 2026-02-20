@@ -1,7 +1,12 @@
 import Head from "next/head";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhone, faLink } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faPhone,
+  faLink,
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Resume() {
@@ -11,10 +16,13 @@ export default function Resume() {
         <title>Imran Khan - Resume</title>
       </Head>
 
-      <div className="bg-white p-6 !pt-4 w-full max-w-[810px]">
+      <div className="bg-white p-6 !pt-4 w-full max-w-[840px]">
+
         {/* Header */}
-        <div className="text-center border-b border-gray-300 pb-2">
-          <h1 className="text-2xl font-bold text-fuchsia-600">IMRAN KHAN</h1>
+        <div className="text-center pb-2">
+          <h1 className="text-2xl font-bold text-fuchsia-600">
+            IMRAN KHAN
+          </h1>
 
           <p className="text-xs text-gray-600">
             Frontend Developer | Master Of Computer Application
@@ -22,38 +30,43 @@ export default function Resume() {
 
           <div className="flex flex-wrap justify-center gap-x-3 gap-y-1 mt-2 text-xs text-gray-700">
             <p>
-              <FontAwesomeIcon icon={faEnvelope} className="mr-1  w-3 h-3" />
+              <FontAwesomeIcon icon={faEnvelope} className="mr-1 w-3 h-3" />
               imarankhan9768@gmail.com
             </p>
 
-            <span className="text-gray-400">|</span>
+            <span>|</span>
 
             <p>
-              <FontAwesomeIcon icon={faPhone} className="mr-1  w-3 h-3" />
+              <FontAwesomeIcon icon={faPhone} className="mr-1 w-3 h-3" />
               8003545085
             </p>
 
-            <span className="text-gray-400">|</span>
+            <span>|</span>
+
+            <p>
+              <FontAwesomeIcon icon={faLocationDot} className="mr-1 w-3 h-3" />
+              Jodhpur, Rajasthan
+            </p>
+
+            <span>|</span>
 
             <Link
               href="https://www.linkedin.com/in/imran-khan-2a0711270"
               target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-700 hover:text-blue-500"
+              className="hover:text-blue-500"
             >
-              <FontAwesomeIcon icon={faLinkedin} className="mr-1  w-3 h-3" />
+              <FontAwesomeIcon icon={faLinkedin} className="mr-1 w-3 h-3" />
               LinkedIn
             </Link>
 
-            <span className="text-gray-400">|</span>
+            <span>|</span>
 
             <Link
               href="https://github.com/imran2904"
               target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-700 hover:text-blue-500"
+              className="hover:text-blue-500"
             >
-              <FontAwesomeIcon icon={faGithub} className="mr-1  w-3 h-3" />
+              <FontAwesomeIcon icon={faGithub} className="mr-1 w-3 h-3" />
               GitHub
             </Link>
           </div>
@@ -61,66 +74,66 @@ export default function Resume() {
 
         {/* Objective */}
         <div className="mt-3">
-          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-purple-500">
-            Objective
+          <h2 className="text-sm font-bold uppercase border-b border-gray-300 pb-1 text-purple-500">
+            Summary
           </h2>
 
           <p className="text-xs mt-2 leading-relaxed">
-            Frontend Developer with <b>2 years of experience</b> building
-            scalable, responsive web applications using <b>React.js, Next.js</b>,
-            and <b>Tailwind CSS</b>. Skilled in performance optimization, UI/UX
-            improvements, API integration, and building production-ready modules
-            for fintech and analytics platforms. Seeking a role where I can
-            contribute to impactful products while continuously improving my
-            technical expertise.
+            Frontend Developer with <b>2 years of experience</b> building scalable web
+            applications using <b>React.js</b> and <b>Next.js</b>. Experienced in
+            <b>Redux Toolkit</b> and <b>Context API</b> for state management, performance
+            optimization, and REST API integration. Hands-on experience developing fintech dashboards,
+            real-time stock analytics platforms, and data visualization systems serving
+            <b>1,000+ users</b>.
           </p>
         </div>
 
         {/* Skills */}
-        <div className="mt-4">
-          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-purple-500">
+        <div className="mt-2">
+          <h2 className="text-sm font-bold uppercase border-b border-gray-300 pb-1 text-purple-500">
             Skills
           </h2>
 
           <div className="flex mt-2">
-            {/* Left Side */}
             <div className="w-1/2 pr-4">
               <p className="text-xs font-bold">Languages</p>
               <p className="text-xs">JavaScript, TypeScript, Python, Java</p>
 
               <p className="text-xs font-bold mt-2">Frontend</p>
-              <p className="text-xs max-w-[270px]">
+              <p className="text-xs">
                 React.js, Next.js, Tailwind CSS, Bootstrap, SCSS,
-                Responsive UI, Highchart , Rechart SEO Basics
+                Highcharts, Recharts, Responsive UI, SEO Basics
               </p>
+
+              <p className="text-xs font-bold mt-2">State Management</p>
+              <p className="text-xs">React Redux, React Context API</p>
 
               <p className="text-xs font-bold mt-2">Backend (Basic)</p>
               <p className="text-xs">Node.js, MongoDB, SQL, REST APIs</p>
             </div>
 
-            {/* Right Side */}
             <div className="w-1/2 pl-4">
-              <p className="text-xs font-bold">Soft Skills</p>
+              <p className="text-xs font-bold">Tools</p>
+              <p className="text-xs">
+                Git, GitHub, Jira, Postman, Vercel, AWS
+              </p>
+
+              <p className="text-xs font-bold mt-3">Soft Skills</p>
               <ul className="list-disc list-inside text-xs space-y-0.5">
-                <li>Time Management</li>
                 <li>Problem Solving</li>
+                <li>Time Management</li>
                 <li>Team Collaboration</li>
                 <li>Adaptability</li>
               </ul>
-
-              {/* Tools (Soft Skills ke niche) */}
-              <p className="text-xs font-bold mt-3">Tools</p>
-              <p className="text-xs">
-                Git, GitHub, Jira, Postman, Vercel, Microsoft Office
-              </p>
             </div>
           </div>
         </div>
 
 
+
         {/* Work Experience */}
         <div className="mt-3">
-          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-purple-500">
+          <h2 className="text-sm font-bold uppercase border-b border-gray-300 pb-1 text-purple-500">
             Work Experience
           </h2>
 
@@ -146,13 +159,11 @@ export default function Resume() {
               </li>
 
               <li>
-                Optimized frontend performance by improving component rendering, reducing
-                unnecessary re-renders, and enhancing overall page speed.
+                Optimized frontend performance by reducing unnecessary re-renders,
+                improving load time by <b>25%</b> and increasing PageSpeed score from <b>50% to 80%</b>.
               </li>
-              <li >
-                Single-handedly developed StockeZee, a stock analysis web application from
-                scratch, enabling users to track stock prices and manage portfolios
-                efficiently.
+              <li>
+                Played a key role in developing and scaling StockeZee, focusing on performance optimization and real-time data workflows.
               </li>
 
               <li>
@@ -165,37 +176,11 @@ export default function Resume() {
           </div>
         </div>
 
-        {/* Education */}
-        <div className="mt-3">
-          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-purple-500">
-            Education
-          </h2>
-
-          <div className="mt-2">
-            <div className="text-sm">Bikaner Technical University</div>
-            <div className="text-[13px] text-gray-700 font-normal">
-              Master of Computer Applications (MCA) - 8.5/10
-              <span className="text-xs text-gray-600 float-right">
-                2022 - 2024
-              </span>
-            </div>
-          </div>
-
-          <div className="mt-2">
-            <div className="text-sm">Jai Narain Vyas University (JNVU)</div>
-            <div className="text-[13px] text-gray-700 font-normal">
-              Bachelor of Science (BSc) in Mathematics
-              <span className="text-xs text-gray-600 float-right">
-                2018 - 2021
-              </span>
-            </div>
-          </div>
-        </div>
 
 
         {/* Projects */}
         <div className="mt-3">
-          <h2 className="text-base font-bold uppercase border-b border-gray-300 pb-1 text-purple-500">
+          <h2 className="text-sm font-bold uppercase border-b border-gray-300 pb-1 text-purple-500">
             Projects
           </h2>
 
@@ -223,10 +208,8 @@ export default function Resume() {
             </h3>
 
             <ul className="list-disc list-inside text-xs mt-1 space-y-0.5 leading-relaxed">
-              <li className="max-w-[680px]">
-                Single-handedly developed StockeZee, a stock analysis web application
-                from scratch, enabling users to track stock prices and manage portfolios
-                efficiently.
+              <li>
+                Developed StockeZee from scratch, a stock analysis web application enabling users to track stock prices and manage portfolios efficiently.
               </li>
 
               <li>
@@ -242,7 +225,7 @@ export default function Resume() {
           </div>
 
           {/* NiftyTrader */}
-          <div className="mt-3">
+          <div className="mt-2">
             <h3 className="text-sm font-medium">
               <Link
                 href="https://www.niftytrader.in"
@@ -264,7 +247,7 @@ export default function Resume() {
               </span>
             </h3>
 
-            <ul className="list-disc list-inside text-xs mt-1 space-y-0.5 leading-relaxed">
+            <ul className="list-disc max-w-[700px] list-inside text-xs mt-1 space-y-0.5 leading-relaxed">
               <li>
                 Contributed to NiftyTrader, a financial platform for stock market
                 trading, by developing multiple modules including Option Chain, user
@@ -279,6 +262,32 @@ export default function Resume() {
           </div>
         </div>
 
+        {/* Education */}
+        <div className="mt-3">
+          <h2 className="text-sm font-bold uppercase border-b border-gray-300 pb-1 text-purple-500">
+            Education
+          </h2>
+
+          <div className="mt-2">
+            <div className="text-sm">Bikaner Technical University</div>
+            <div className="text-[13px] text-gray-700 font-normal">
+              Master of Computer Applications (MCA) - 8.5/10
+              <span className="text-xs text-gray-600 float-right">
+                2022 - 2024
+              </span>
+            </div>
+          </div>
+
+          <div className="mt-2">
+            <div className="text-sm">Jai Narain Vyas University (JNVU)</div>
+            <div className="text-[13px] text-gray-700 font-normal">
+              Bachelor of Science (BSc) in Mathematics
+              <span className="text-xs text-gray-600 float-right">
+                2018 - 2021
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
