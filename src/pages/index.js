@@ -79,12 +79,12 @@ export default function Resume() {
           </h2>
 
           <p className="text-xs mt-2 leading-relaxed">
-            Frontend Developer with <b>2 years of experience</b> building scalable web
+            Frontend Developer with <b>2+ years of experience</b> building scalable web
             applications using <b>React.js</b> and <b>Next.js</b>. Experienced in
             <b className="ms-1">Redux Toolkit</b> and <b>Context API</b> for state management, performance
             optimization, and REST API integration. Hands-on experience developing fintech dashboards,
             real-time stock analytics platforms, and data visualization systems serving
-             <b className="ms-1">1,000+ users</b>.
+             <b className="ms-1">6,000+ users</b>.
           </p>
         </div>
 
@@ -97,16 +97,16 @@ export default function Resume() {
           <div className="flex mt-2">
             <div className="w-1/2 pr-4">
               <p className="text-xs font-bold">Languages</p>
-              <p className="text-xs">JavaScript, TypeScript, Python, Java</p>
+              <p className="text-xs">JavaScript, TypeScript, Python, Java, C, C++</p>
 
               <p className="text-xs font-bold mt-2">Frontend</p>
               <p className="text-xs">
-                React.js, Next.js, Tailwind CSS, Bootstrap, SCSS,
-                Highcharts, Recharts, Responsive UI, SEO Basics
+                React.js (ReactJS), Next.js (NextJS), Tailwind CSS, Bootstrap, SCSS,
+                Highcharts, Recharts, Responsive UI, Intermediate SEO, Web Vitals Optimization
               </p>
 
               <p className="text-xs font-bold mt-2">State Management</p>
-              <p className="text-xs">React Redux, React Context API</p>
+              <p className="text-xs">Redux Toolkit, Zustand, React Query, Context API</p>
 
               <p className="text-xs font-bold mt-2">Backend (Basic)</p>
               <p className="text-xs">Node.js, MongoDB, SQL, REST APIs</p>
@@ -213,7 +213,7 @@ export default function Resume() {
 
               <li>
                 Designed a responsive UI using Next.js and Tailwind CSS, integrating
-                real-time stock APIs for <b>1,000+ users</b>,
+                real-time stock APIs for <b>6,000+ users</b>,
               </li>
 
               <li>
